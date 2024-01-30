@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: white;
+}
+.navbar{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; */
+    background: #212121;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.logo{
+    
+    align-items:center;
+    height: 50px;
+    width: 100px;
+    margin: -10px 30px 0;
+    margin-top : 0px;
+}
+
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 75%;
+    height: 40px;
+    display: flex;
+    margin-left: 220px;
+    border: 2px solid rgb(9, 9, 9);
+    border-radius: 15px;
+    background-color: black;
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn{
+    width: 12%;
+    height: 90%;
+    padding: 5px 0;
+    border-left: none;
+}
+input{
+    color: white;
+    outline: none;
+    background-color: black;
+    border: none;
+}
+.search-btn img{
+    margin-top: 15px;
+    height: 100%;
+    width: 20px;
+    margin: auto;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+#creat{
+    width: 40px;
+    height: 40px;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* side-baar */
+
+
+.side-bar{
+    overflow-y: scroll;
+    /* position: fixed; */
+    /* top: 60px;
+    left: 0; */
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    height: calc(100vh - 50px);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding-right: 10px;
+}
+.blur {
+    filter: blur(5px); /* Adjust the blur strength as needed */
+    pointer-events: none; /* Prevent interactions with the blurred content */
+  }
+
+.side-bar::-webkit-scrollbar{
+    border: 2px solid rgb(36, 34, 34);
+    background-color: #5b5454;
+}
+.links{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+
+.links img{
+    height: 25px;
+    margin-right: 20px;
+}
+
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.seperator{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+
+.sidebar {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-200px);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
